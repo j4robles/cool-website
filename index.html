@@ -2,9 +2,72 @@
 
 <html lang="en">
   <head>
-    <title>Cool Website</title>
+    <meta charset="utf-8" />
+    <link href="stylesheet/that/exists.css" rel="stylesheet" />
+    <title>Josh Robles Portfolio</title>
   </head>
   <body>
-    <p>Bruh</p>
+    <header style="border: 2px solid black">
+      <nav aria-label="Navigation">
+        <ul>
+          <li><a href="/">About Me</a></li>
+          <li><a href="/projects.html">Projects</a></li>
+          <li><a href="/games.html">Games</a></li>
+          <li><a href="/resume.html">Resume</a></li>
+          <li><a href="/contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div id="interactive-images" style="border: 2px solid black">
+      <!-- These'll be interactable in some way when the CSS/JS hits -->
+      <!-- I don't know how big they'll need to be yet doe so I didn't size them -->
+      <picture style="border: 2px dotted blue">
+        <img src="roblox.jpg" alt="cool image" />
+      </picture>
+      <picture style="border: 2px dotted blue">
+        <img src="roblox.jpg" alt="cool image" />
+      </picture>
+      <picture style="border: 2px dotted blue">
+        <img src="roblox.jpg" alt="cool image" />
+      </picture>
+      <picture style="border: 2px dotted blue">
+        <img src="roblox.jpg" alt="cool image" />
+      </picture>
+    </div>
+    <main>
+      <article style="border: 2px solid black">
+        <hgroup id="name-card" style="border: 2px solid red">
+          <h1>Josh Robles</h1>
+          <p>Aspiring Software Engineer</p>
+          <p>Game Developer</p>
+        </hgroup>
+        <section>
+          <h2>About Me</h2>
+          <p>Hello, I am a computer science student at UCSD with an interest in software
+            engineering, particular in the fields of web and game development. I <strong>love</strong>
+            videogames, which provided my first explorations into programming through modding
+            my favorite games and developing one of my own in Unity. Beyond gaming, I've expanded my
+            interest into web development, initially as a way of promoting my game but now with the
+            ambition to create quality websites that put the user first. 
+          </p>
+          <p>
+            I've had exposure to both backend and frontend development, with a preferred tech stack of C# using
+            ASP.NET Core and Vue.js with PostgreSQL. Much of my C# knowledge comes from experience
+            developing my game in Unity engine, but I've had further practice in unrelated personal
+            projects and in backend and API web development. C++ is another favored language of mine for
+            applications outside of web and game development. I concede that I'm not an expert in the technologies
+            I practice, so I'm always seeking to learn more to improve my work and create greater things.
+          </p>
+          <p>
+            Be sure to check out some of my (always expanding) works in Projects or Games for a better look into
+            what I can do or if you just want a game to play. I'm always eager to discuss personal projects of mine
+            with those interested; if that's you, don't hesistate to Contact me.
+          </p>
+        </section>
+      </article>
+    </main>
+    <footer style="border: 2px solid black">
+      <p>Authored by Josh Robles.</p>
+    </footer>
   </body>
 </html>

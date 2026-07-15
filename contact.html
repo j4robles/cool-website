@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link href="stylesheet/that/exists.css" rel="stylesheet" />
+    <title>Josh Robles' Résumé</title>
+
+		<!--These be for the custom tags-->
+		<style>
+			my-warning {
+				font-weight: bold;
+				color: red;
+				background-color: black;
+			}
+		</style>
+		<script src="helloWorld.js"></script>
+  </head>
+  <body>
+		<hello-world></hello-world>
+    <header style="border: 2px solid black">
+      <nav aria-label="Navigation">
+        <ul>
+          <li><a href="/">About Me</a></li>
+          <li><a href="/projects.html">Projects</a></li>
+          <li><a href="/games.html">Games</a></li>
+          <li><a href="/resume.html">Resume</a></li>
+          <li><a href="/contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <h1 style="border: 2px solid black">Get in Touch</h1>
+			<section>
+				<noscript>
+					<dialog open id="no-js-dialog">
+						<my-warning>JavaScript is disabled or otherwise failed to fetch. The form is functional but may be less visually responsive.</my-warning>
+						<form method="dialog">
+							<button>Okay</button>
+						</form>
+					</dialog>
+				</noscript>
+
+				<h2>By Form (Preferred)</h2>
+				<form style="border: 2px dotted hotpink">
+					<fieldset>
+						<legend>Contact</legend>
+							<label for="form-email">Your Email</label><br />
+							<input type="text" id="input-email" placeholder="email@example.com" /><br />
+							<label for="form-message">Your Message</label><br />
+							<textarea 
+								id="form-message" 
+								rows="8" 
+								placeholder="Your message here.">
+							</textarea><br />
+							<button type="submit">Submit</button>
+					</fieldset>
+					<!--Will animate dis with JS o algo-->
+					<label for="form-submission" hidden>Submitting:</label>
+					<progress id="form-submission" hidden></progress>
+				</form>
+			</section>
+			<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="black" stroke-width="2">
+				<rect x="3" y="5" width="18" height="14"/>
+				<path d="m3 7 9 6 9-6"/>
+			</svg>
+			<address>Email: not putting it yet cause it'll get spammed by bots. I'll make it into an image and add it then.</address>
+    </main>
+    <footer style="border: 2px solid black">
+      <p>Authored by Josh Robles.</p>
+    </footer>
+  </body>
+</html>
